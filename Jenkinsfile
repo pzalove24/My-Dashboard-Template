@@ -7,5 +7,11 @@ pipeline {
                 checkout scm
             }
         }
+
+        stage('Client Test') {
+            dir('client') {
+                sh 'npm install'
+            }
+        }
     }
 }
