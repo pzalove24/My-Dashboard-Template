@@ -7,6 +7,6 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
-RUN npm run build
-# Expose the port on which the app will be running (3000 is the default that `serve` uses)
 EXPOSE 3000
+
+CMD ["npm", "start"]
