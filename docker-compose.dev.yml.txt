@@ -13,8 +13,6 @@ services:
         image: peeratchai24/mern-client:latest
         environment:
             - CHOKIDAR_USEPOLLING=true
-        env_file:
-            - ./client/.env.local
 
     server:
         image: peeratchai24/mern-server:latest
